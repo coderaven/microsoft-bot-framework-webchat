@@ -38,7 +38,7 @@
             var user = {
                 id: params['userid'] || 'userid',
                 name: params["username"] || 'username'
-                };
+            };
             
             var bot = {
                 id: params['botid'] || 'botid',
@@ -49,15 +49,18 @@
 
             BotChat.App({
                 directLine: {
-                    secret: params['s'],
+                    secret: "-Le1HEn1CbM.cwA.Efg.bo6OS68OB67ZuNvobzByCBEqgJjAuTTs8fj8yjwEAi0",
                     token: params['t'],
                     domain: params['domain'],
+                    // conversationId: "HocQABl5Ni9HwyhsJGKJzi",
+                    // watermark: "0000"
                     webSocket: params['webSocket'] && params['webSocket'] === "true" // defaults to true
                 },
                 user: user,
                 bot: bot,
                 locale: params['locale'],
-                resize: 'window'
+                resize: 'window',
+                sendTyping: true
                 // sendTyping: true,    // defaults to false. set to true to send 'typing' activities to bot (and other users) when user is typing
             }, document.getElementById("BotChatGoesHere"));
         </script>

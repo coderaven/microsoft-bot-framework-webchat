@@ -281,8 +281,8 @@ $actionTransition: .2s cubic-bezier(0,0,.5,1);
         font-size: 13px;
 
         button {
-            background-color: transparent;
-            color: $c_brand;
+            background-color: $c_buttonColor;
+            color: $c_buttonTextColor;
             min-height: 32px;
             width: 100%;
             padding: 0 16px;
@@ -295,9 +295,9 @@ $actionTransition: .2s cubic-bezier(0,0,.5,1);
         }
 
         button:active {
-            background-color: $c_brand;
+            background-color: $c_buttonActiveBackgroundColor;
             border-color: $c_brand;
-            color: $c01;
+            color: $c_buttonActiveText;
         }
 
         h1 {
@@ -693,3 +693,209 @@ $actionTransition: .2s cubic-bezier(0,0,.5,1);
     .wc-app ::-webkit-scrollbar-thumb {
         background-color: $c_chrome;
     }
+
+
+// Overrides
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.trabble-ripple{position:relative;overflow:hidden}.trabble-ripple:after{content:"";display:block;position:absolute;width:100%;height:100%;top:0;left:0;pointer-events:none;background-image:radial-gradient(circle,#000 10%,transparent 10.01%);background-repeat:no-repeat;background-position:50%;transform:scale(10,10);opacity:0;transition:transform 2.5s,opacity 3s}.trabble-ripple:active:after{transform:scale(0,0);opacity:.2;transition:0s}
+
+.wc-console svg {
+    fill: #7B1FA2;
+    margin: 11px;
+}
+
+.wc-header {
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.wc-header #header-logo {
+    width: 140px !important;
+    margin-top: -4px !important;
+}
+
+ul.wc-card-buttons {
+    clear: both;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+ul.wc-card-buttons li {
+    width: 100% !important;
+}
+
+.wc-message-groups {
+    background: #efefec;
+}
+
+.wc-console {
+    background: #fff;
+    /*background: #f0f3f5;*/
+    border-color: transparent;
+}
+
+.wc-console textarea, .wc-console input[type=text] {
+    border: none;
+    height: 100%;
+    outline: none;
+    padding: 0;
+    resize: none;
+    width: 100%;
+}
+
+.wc-console textarea, .wc-console input[type=text] {
+    padding-left: 5px;
+}
+
+.wc-message-content {
+    border-radius: 5px !important;
+
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.2);
+    padding: 8px;
+    word-break: break-word;
+}
+
+.wc-message-callout {
+    display: none !important;
+}
+
+.wc-card {
+    /*border-radius: 15px !important;*/
+
+    border: none !important;
+    font-size: 13px;
+    padding: 8px;
+}
+
+.wc-card button {
+    min-height: 20px;
+    width: 100%;
+    padding: 0 16px;
+
+    border-radius: 5px !important;
+    border: none;
+}
+
+.wc-card button:hover {
+    background-color: #FF9100;
+    color: #fff;
+}
+
+.wc-card button:active {
+
+}
+
+.send-icon {
+    margin-top: 5px;
+}
+
+.wc-message-from-bot .wc-message-content {
+    background-color: #fff;
+    color: #000;
+}
+
+#login-wrap {
+    z-index: 9999 !important;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    position: absolute;
+}
+
+#login-buttons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#BotChatGoesHere {
+    z-index: 9000 !important;
+}
+
+
+
+/* For Smaller Screens */
+
+@media screen and (max-width: 500px) { 
+    ul.wc-card-buttons li {
+        width: 100%;
+    }
+}
+
+
+/* Webview */
+
+.webview-wrap {
+    z-index: 9999 !important;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    position: absolute;
+    bottom: 0;
+}
+
+.webview-content {
+        background: #fff;
+        height: 80%;
+        width: 100%;
+        bottom: 0;
+        position: absolute;
+}
+
+.webview  { 
+    position: relative; 
+    height: 100%; 
+    overflow: hidden; 
+    max-width: 100%; 
+} 
+
+.webview  iframe, .webview  object, .webview embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+
+.webview-bar {
+    height: 40px;
+    width: 100%;
+    background-color: #eee;
+}
+
+.close-webview-link {
+    font-family: 'Roboto', sans-serif !important;
+    color: #1f85ff;
+    text-decoration: none;
+    padding-left: 5px;
+    padding-top: 10px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 20000;
+}
+
+.close-webview-link img {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+}
+
+.webview-title {
+    font-family: 'Roboto', sans-serif !important;
+    color: #000;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    margin-top: 12px;
+    position: absolute;
+    margin-left: -10px;
+}
+
+.webview-wrap {
+    display: none;
+}

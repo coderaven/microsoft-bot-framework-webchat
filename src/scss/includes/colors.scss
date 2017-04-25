@@ -12,11 +12,24 @@ $c10: #dbdee1;
 $c11: #d2dde5;
 $c12: #ffa333;
 
-$c_brand: $c07;
+// Trabble Branding Colors
+$trabbleOrange: #FF9100;
+$trabbleDarkOrange: #FF6D00;
+$trabbleLightOrange: #FFE0B2;
+$trabblePurple: #7B1FA2;
+$trabbleDarkPurple: #5C177A;
+$trabbleLightPurple: #E1BEE7;
+
+$c_brand: $trabbleOrange;
 $c_shadow: $c02;
 $c_chrome: $c10;
 $c_textHeading: $c08;
 $c_textLight: $c04;
+
+$c_buttonColor: $trabbleOrange;
+$c_buttonTextColor: $c01;
+$c_buttonActiveBackgroundColor: $trabbleDarkOrange;
+$c_buttonActiveText: $c01;
 
 $c_messageFromMe: $c07;
 $c_messageFromThem: $c09;

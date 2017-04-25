@@ -18,7 +18,7 @@ interface LocalizedStrings {
 
 const localizedStrings: LocalizedStrings = {
     'en-us': {
-        title: "Chat",
+        title: "POWERED BY TRABBLE",
         send: "Send",
         unknownFile: "[File of type '%1']",
         unknownCard: "[Unknown Card '%1']",
@@ -31,7 +31,7 @@ const localizedStrings: LocalizedStrings = {
         consolePlaceholder: "Type your message..."
     },
     'de-de': {
-        title: "Chat",
+        title: "POWERED BY TRABBLE",
         send: "Senden",
         unknownFile: "[Datei vom Typ '%1']",
         unknownCard: "[Unbekannte Card '%1']",
@@ -44,7 +44,7 @@ const localizedStrings: LocalizedStrings = {
         consolePlaceholder: "Verfasse eine Nachricht..."
     },
     'pl-pl': {
-        title: "Chat",
+        title: "POWERED BY TRABBLE",
         send: "Wyślij",
         unknownFile: "[Plik typu '%1']",
         unknownCard: "[Nieznana karta '%1']",
@@ -70,7 +70,7 @@ const localizedStrings: LocalizedStrings = {
         consolePlaceholder: "Введите ваше сообщение..."
     },
     'nl-nl': {
-        title: "Chat",
+        title: "POWERED BY TRABBLE",
         send: "Verstuur",
         unknownFile: "[Bestand van het type '%1']",
         unknownCard: "[Onbekende kaart '%1']",
@@ -109,7 +109,7 @@ const localizedStrings: LocalizedStrings = {
         consolePlaceholder: "Digite sua mensagem..."
     },
     'fr-fr': {
-        title: "Chat",
+        title: "POWERED BY TRABBLE",
         send: "Envoyer",
         unknownFile: "[Fichier de type '%1']",
         unknownCard: "[Carte inconnue '%1']",
@@ -122,7 +122,7 @@ const localizedStrings: LocalizedStrings = {
         consolePlaceholder: "Écrivez votre message..."
     },
     'es-es': {
-        title: "Chat",
+        title: "POWERED BY TRABBLE",
         send: "Enviar",
         unknownFile: "[Archivo de tipo '%1']",
         unknownCard: "[Tarjeta desconocida '%1']",
